@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="eel.js"></script>
+    <title>web-interface</title>
+</head>
+<body style="font-family:Arial, Verdana, sans-serif;background-image:url(images/background.jpg);background-size:cover">
+    <form action="#" method = "#" id = 'form'>
+        <input type="text" name="text">
+        <input type="submit" style="background-image: url(button.png);">
+    </form>
+    <script>
+    const form = document.getElementById('form');
+    form.addEventListener('submit', getFormValue);
+    function getFormValue(event) {
+    event.preventDefault();
+    text = form.querySelector('[name="text"]');
+    console.log(text.value);};
+    </script>
+</body>
+</html>
