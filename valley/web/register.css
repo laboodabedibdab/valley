@@ -1,0 +1,32 @@
+body {
+    font-family:Arial, Verdana, sans-serif;
+    background-image:url(images/background.jpg);
+    background-size:cover
+}
+.submit {
+    background-image: url(images/button.png);
+    border-radius: 10px;
+    width:150px;
+    height:40px;
+    margin-top:10px;
+    margin-left:70px;
+   }
+.text {
+    color:#0a0a0a;
+    text-align:center;
+}
+.write {
+    border-radius: 10px;
+    background-color:#808080;
+    width:300px;
+}
+.block_1 {
+    border-radius: 10px;
+    background-color:#2b2b2b;
+    width:350px;
+    height:300px;
+    margin:0px auto;
+}
+#form {
+    margin:25px;
+}
