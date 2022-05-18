@@ -3,20 +3,30 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="eel.js"></script>
-    <title>web-interface</title>
+    <link rel="stylesheet" href="register.css">
 </head>
-<body style="font-family:Arial, Verdana, sans-serif;background-image:url(images/background.jpg);background-size:cover">
-    <form action="#" method = "#" id = 'form'>
-        <input type="text" name="text">
-        <input type="submit" style="background-image: url(images/button.png);">
-    </form>
+<body>
+    <div class="block_1">
+        <form action="#" method = "POST" id = 'form'>
+            <h3 class="text">Имя</h3>
+            <input type = "text" class = "write" name="nick"><br>
+            <h3 class="text">Пароль</h3>
+            <input type = "password" class = "write" name="password"><br>
+            <h3 class="text">Номер телефона</h3>
+            <input type="text" class = "write" name="tel"><br>
+            <input type="submit" class = "submit">
+        </form>
+    </div>
     <script>
     const form = document.getElementById('form');
     form.addEventListener('submit', getFormValue);
-    function getFormValue(event) {
+    async function getFormValue(event) {
     event.preventDefault();
-    text = form.querySelector('[name="text"]');
-    console.log(text.value);};
+    nick = form.querySelector('[name="nick"]');
+    password = form.querySelector('[name="password"]');
+    tel = form.querySelector('[name="tel"]');
+    await eel.get_inf(nick.value,password.value,tel.value);
+    }
     </script>
 </body>
 </html>
