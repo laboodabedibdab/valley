@@ -1,0 +1,38 @@
+body {
+    font-family:Arial, Verdana, sans-serif;
+    background-image:url(images/background.jpg);
+    background-size:cover
+}
+.submit {
+    background-image: url(images/button.png);
+    border-radius: 10px;
+    width:150px;
+    height:40px;
+    margin-top:10px;
+    margin-left:70px;
+   }
+.text {
+    color:#e3e3e3;
+    text-align:center;
+}
+.write {
+    font-size:150%;
+    color:#ccc;
+    border-radius: 10px;
+    background-color:#121212;
+    width:300px;
+}
+.block_1 {
+    position: relative;
+    top: 8em;
+    border-radius: 10px;
+    background-color:#1f1f1f;
+    width:370px;
+    height:370px;
+    margin:0px auto;
+}
+#form {
+    margin:35px;
+}
+#sign_in {
+}

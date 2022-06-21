@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="eel.js"></script>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <a href="sign_in.html" class="text" id = "sign_in">Войти</a>
+    <div class="block_1">
+        <form action="#" method = "POST" id = 'form'>
+            <h2 class ="text">Регистрация</h2>
+            <h3 class="text">Имя</h3>
+            <input type = "text" class = "write" name="nick"><br>
+            <h3 class="text">Номер телефона</h3>
+            <input type="text" class = "write" name="tel"><br>
+            <input type="submit" class = "submit">
+        </form>
+    </div>
+    <script>
+    const form = document.getElementById('form');
+    form.addEventListener('submit', getFormValue);
+    async function getFormValue(event) {
+    event.preventDefault();
+    nick = form.querySelector('[name="nick"]');
+    tel = form.querySelector('[name="tel"]');
+    await eel.get_inf(nick.value,tel.value);
+    }
+    </script>
+</body>
+</html>
